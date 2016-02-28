@@ -1,0 +1,11 @@
+<ion-view title="Friends">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <ion-list>
+            <ion-item class="item-thumbnail-left" ng-repeat="u in users">
+                <img src="{{ u.picurl }}">
+                <h2>{{ u.username }}</h2>
+                <p>{{ u.email }}</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

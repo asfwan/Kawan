@@ -1,0 +1,20 @@
+<ion-view title="User">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+
+		<ion-list>
+            <ion-item>{{ user.owing }}</ion-item>
+        </ion-list>
+
+        <div class="list">
+			<label class="item item-input">
+				<span class="input-label">RM</span>
+				<input type="text" placeholder="amount" ng-model="amount">
+			</label>
+		</div>
+
+		<button class="button button-block button-positive" ng-click="applyAndBack(amount)">
+			Apply
+		</button>
+
+	</ion-content>
+</ion-view>
