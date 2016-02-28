@@ -8,14 +8,10 @@ angular.module('app.routes', [])
   // Each state's controller can be found in controllers.js
   $stateProvider
     
-  .state('loginController', {
+  .state('login', {
     url: '/login',
-    views: {
-      'tab1': {
-        templateUrl: 'templates/login.html',
-        controller: 'loginCtrl'
-      }
-    }
+    templateUrl: 'templates/login.html',
+    controller: 'loginCtrl'
   })
 
   .state('tabsController.iOU', {
@@ -64,7 +60,7 @@ angular.module('app.routes', [])
     }
   })
 
-$urlRouterProvider.otherwise('/main/iou')
+$urlRouterProvider.otherwise('/login')// /main/iou
 
   
 
