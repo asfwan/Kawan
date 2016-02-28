@@ -17,10 +17,24 @@ angular.module('app.services', [])
   }
 }])
 
+.factory('StringFactory', [function(){
+	return{
+		capitalizeFirstLetter:function(string) {
+		    return string.charAt(0).toUpperCase() + string.slice(1);
+		}
+	}	
+}])
+
 .service('userData', [function(){
 	return {
 		setId:function(id){
 			this.id=id;
+		},
+		setMe:function(me){
+			this.me=me;
+		},
+		setMySessionId:function(mySessionId){
+			this.mySessionId=mySessionId;
 		},
 		setOwing:function(owing){
 			this.owing=owing;

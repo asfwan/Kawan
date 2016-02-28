@@ -1,9 +1,9 @@
 <ion-view title="Friends">
     <ion-content overflow-scroll="true" padding="true" class="has-header">
         <ion-list>
-            <ion-item class="item-thumbnail-left" ng-repeat="u in users">
+            <ion-item class="item-thumbnail-left" ng-repeat="u in users" ng-click="showActionSheet(u.username)">
                 <img src="{{ u.picurl }}">
-                <h2>{{ u.username }}</h2>
+                <h2 style="text-transform:capitalize">{{ u.username }}</h2>
                 <p>{{ u.email }}</p>
             </ion-item>
         </ion-list>
