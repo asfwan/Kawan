@@ -60,6 +60,16 @@ angular.module('app.routes', [])
     }
   })
 
+  .state('tabsController.addFriend', {
+    url: '/addFriend',
+    views: {
+      'tab2': {
+        templateUrl: 'templates/addFriend.html',
+        controller: 'addFriendCtrl'
+      }
+    }
+  })
+
 $urlRouterProvider.otherwise('/login')// /main/iou
 
   
